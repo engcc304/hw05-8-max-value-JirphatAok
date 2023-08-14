@@ -20,3 +20,21 @@
         The 1rd Number is the greatest among three
 
 */
+#include <stdio.h>
+int main () {
+    int Num1, Num2, Num3 ;
+    scanf( "%d %d %d",&Num1, &Num2, &Num3 ) ;
+    printf( "1st Number = %d\n",Num1 ) ;
+    printf( "2st Number = %d\n",Num2 ) ;
+    printf( "3st Number = %d\n",Num3 ) ;
+    if ( Num1 > Num2 && Num1 > Num3) {
+        printf( "The 1rd Number is the greatest among three" ) ;
+    }
+    else if ( Num2 > Num1 && Num2 > Num3) {
+        printf( "The 2rd Number is the greatest among three" ) ;
+    }
+    else {
+       printf( "The 3rd Number is the greatest among three" ) ;
+    }
+   return 0 ;
+}
